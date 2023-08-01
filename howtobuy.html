@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Buy</title>
+    <style>
+        body {
+            background-color: #1A1728;
+            height: 100vh;
+
+        }
+
+        h1 {
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .parent {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 10%;
+
+
+        }
+
+        .child1 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .child1 {
+            background-color: #1B1D2E;
+            color: #FFFFFF;
+            height: 50vh;
+            width: 25vw;
+            border-radius: 10px;
+        }
+        .child1 h3{
+            font-size: 20x;
+        }
+        
+        .child2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 50vh;
+            width: 25vw;
+            background-color: #1B1D2E; 
+            border-radius: 10px;
+
+        }
+span{
+    color: #ce8003;
+}  
+
+
+
+
+
+
+
+
+
+
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.child2 , .child1 {
+	position: relative;
+	z-index: 0;
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #e4540c;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(#1B1D2E, #1B1D2E), linear-gradient(#29e7f8, #061a19), linear-gradient(#ce8003, #290a26), linear-gradient(#0d0e0d, #092608);
+		animation: rotate 4s linear infinite;
+	}
+	
+}
+
+@keyframes opacityChange {
+	50% {
+		opacity:1;
+	}
+	100% {
+		opacity: .5;
+	}
+}
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>HOW TO BUY <br> <span>Shazam</span> COIN</h1>
+    <div class="parent">
+        <div class="child1">
+            <div style="border: 3px solid #272435; width: 20vw; border-left: none; border-right: none; border-top: none;display: flex; align-items: baseline; justify-content: space-between;"> <h3>1</h3>Connect your wallet</div>
+            <div style="border: 3px solid #272435;  width: 20vw;border-left: none; border-right: none; border-top: none; display: flex; align-items: baseline;justify-content: space-between;"><h3>2</h3>Adding Shazam token to exchange</div>
+            <div style="border: 3px solid #272435;  width: 20vw;border-left: none; border-right: none;border-top: none; display: flex; align-items: baseline;justify-content: space-between;"><h3>3</h3>Setting slippage tolerance (25%)</div>
+            <div style="border: 3px solid #272435;  width: 20vw; border-left: none; border-right: none;border-top: none;display: flex; align-items: baseline;justify-content: space-between;"><h3>4</h3>Finalizing swap</div>
+        </div>
+        <div class="child2">
+            <h1>BUY <span>$Shazam</span> ON <br> UNISWAP</h1>
+            <img src="images/Group 96.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

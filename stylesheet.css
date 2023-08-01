@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #1A1728;
+    width: 100vw;
+    height: 21vh;
+}
+nav img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 217px;
+    height: 123px;
+}
+nav ul{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: -5% 3% 3% 5%;
+    position: relative;
+    top: 3%;
+    left: 10%;
+}
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.section1{
+    background-color: #1A1728;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1 img{
+    position: relative;
+    height: 707px;
+    width: 754px;
+}
+.section1 > div {
+    margin: 0 100px; /* Adjust the margin as per your requirement */
+  }
+  .section1 h1{
+    font-size: xx-large;
+text-transform: uppercase;
+color: #FFFFFF;
+  }
+  .section1 p{
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+  .section1 button img{
+    height: 56px;
+    width: 155px;
+    
+  }
+  .section1 h1, p ,image{
+  margin: 2% 4% 5% 0%;
+  }
+  .section1 button{
+    border-radius: 15px;
+    background-color: #FFED00;
+    height:auto ;
+    width: auto;
+  }
